@@ -1,10 +1,10 @@
 ///player_hurt()
 
 attack = instance_nearest(x, y, obj_attack);
-been_hit = true;
 
 if(not attack.from_player) {
     hp -= attack.damage;
+    been_hit = true;
     
     if(hp <= 0) {
         is_dead = true;

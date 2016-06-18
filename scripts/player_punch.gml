@@ -6,9 +6,9 @@ if(not has_punched) {
     hspeed = 0;
     var punch;
     if (facing_left) {
-        punch = instance_create(x-170, y-128, obj_attack);
+        punch = instance_create(x-100, y-150, obj_attack);
     } else {
-        punch = instance_create(x+170, y-128, obj_attack);
+        punch = instance_create(x+100, y-150, obj_attack);
     }
     sprite_index = spr_player_punch;
     image_index = 0;
