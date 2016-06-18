@@ -73,6 +73,11 @@
       <script>scripts\perform_animation.gml</script>
       <script>scripts\animation_step.gml</script>
     </scripts>
+    <scripts name="enemy_gen">
+      <script>scripts\enemy_gen_init.gml</script>
+      <script>scripts\add_enemy.gml</script>
+      <script>scripts\enemy_gen_step.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -88,6 +93,7 @@
       <object>objects\obj_options_button</object>
       <object>objects\obj_quit_button</object>
     </objects>
+    <object>objects\obj_enemy_gen</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
