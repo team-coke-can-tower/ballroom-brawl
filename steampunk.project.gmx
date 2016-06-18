@@ -103,7 +103,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
-    <room>rooms\rm_menu</room>
+    <room>rooms\rm_main</room>
     <room>rooms\rm_options</room>
     <room>rooms\rm_losing_screen</room>
     <room>rooms\rm_winning_screen</room>
