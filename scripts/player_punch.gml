@@ -5,10 +5,13 @@
 if(not has_punched) {
     var punch;
     if (facing_left) {
-        punch = instance_create(x-40, y, obj_attack);
+        punch = instance_create(x-170, y-128, obj_attack);
     } else {
-        punch = instance_create(x+40, y, obj_attack);
+        punch = instance_create(x+170, y-128, obj_attack);
     }
+    sprite_index = spr_player_punch;
+    image_index = 0;
+    image_speed = 0.5;
     punch.from_player = true;
     punch.damage = 1;
     
