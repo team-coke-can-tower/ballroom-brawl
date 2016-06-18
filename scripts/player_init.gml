@@ -1,9 +1,9 @@
 ///init()
 
-x_speed = 3;
-y_speed = 10;
+x_speed = 7;
+y_speed = 20;
 
-v_acc = 0.5;
+v_acc = 1;
 
 image_speed = 0.25;
 

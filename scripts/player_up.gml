@@ -1,8 +1,9 @@
 ///player_up()
 
 if (not (has_punched or been_hit or falling)) {
-    alarm[1] = 20;  // call player_up_alarm()
+    alarm[1] = 10;  // call player_up_alarm()
     sprite_index = spr_player_jump;
     image_index = 0;
+    image_speed = 0.5;
     falling = true;
 }
