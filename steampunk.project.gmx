@@ -6,7 +6,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_floor</sprite>
     <sprite>sprites\spr_heart</sprite>
     <sprite>sprites\spr_attack</sprite>
     <sprite>sprites\spr_gentleman</sprite>
@@ -87,7 +86,6 @@
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
-    <object>objects\obj_floor</object>
     <object>objects\obj_ui</object>
     <object>objects\obj_attack</object>
     <object>objects\obj_lady</object>
@@ -103,7 +101,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
-    <room>rooms\rm_main</room>
+    <room>rooms\rm_menu</room>
     <room>rooms\rm_options</room>
     <room>rooms\rm_losing_screen</room>
     <room>rooms\rm_winning_screen</room>

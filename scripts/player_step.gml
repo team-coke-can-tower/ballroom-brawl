@@ -12,3 +12,11 @@ if((sprite_index == spr_player_land) and (image_index == 3)) {
     image_index = 0;
 }
 
+// collision check with floor
+if((y >= (room_height - 64))) {
+    y = room_height - 64;
+    if (not pre_jumping) {
+        player_collide_wall();
+    }
+}
+
