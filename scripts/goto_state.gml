@@ -8,21 +8,23 @@ state_alarm_on = false
 
 // reset the state alarm
 
+show_debug_message(state)
+
 switch(state){
     case "idle":
-        perform_animation(IDLE_ANIMATION, true)
+        perform_animation(idle_sprite, true, 0.5)
         alarm[0] = irandom_range(300, 500)
         break;
     case "move": 
-        perform_animation(MOVE_ANIMATION, true)
-        alarm[0] = 500 // 5 secs until you get rid of the move state
+        perform_animation(move_sprite, true)
+        alarm[0] = 5000 // 5 secs until you get rid of the move state
         break;
     case "hurt":
-        perform_animation(HURT_ANIMATION, false)
+        perform_animation(hurt_sprite, false)
         break;
     case "combo": 
-        combo_num = irandom_range(1, array_height_2d(global.combos))
+        combo_num = irandom_range(0, array_height_2d(combos) - 1)
         combo_attack_index = 0
-        perform_animation(global.combos[combo_num, 0] + ATTACK_ANIMATIONS, false)
+        perform_animation(attack_sprites[combos[combo_num, 0]], false)
         break;
 }

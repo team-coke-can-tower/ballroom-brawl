@@ -68,12 +68,12 @@
       <script>scripts\enemy_init.gml</script>
       <script>scripts\goto_state.gml</script>
     </scripts>
-    <scripts name="main_room">
-      <script>scripts\room_init.gml</script>
-    </scripts>
     <scripts name="animations">
       <script>scripts\perform_animation.gml</script>
-      <script>scripts\animation_step.gml</script>
+      <script>scripts\animation_end.gml</script>
+    </scripts>
+    <scripts name="lady">
+      <script>scripts\lady_init.gml</script>
     </scripts>
     <scripts name="enemy_gen">
       <script>scripts\enemy_gen_init.gml</script>
@@ -98,8 +98,8 @@
     <object>objects\obj_enemy_gen</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_menu</room>
     <room>rooms\rm_main</room>
+    <room>rooms\rm_menu</room>
     <room>rooms\rm_options</room>
     <room>rooms\rm_losing_screen</room>
     <room>rooms\rm_winning_screen</room>

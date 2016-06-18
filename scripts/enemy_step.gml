@@ -1,7 +1,5 @@
 // enemy_step()
 
-animation_step()
-
 // all states go to combo if you are near enough
 
 if(distance_to_object(obj_player) < 5){
@@ -13,12 +11,12 @@ if(distance_to_object(obj_player) < 5){
 
 switch(state){
     case "idle":
-        if(!state_alarm_on){
+        if(state_alarm_on){
             goto_state("move")
         }
         break
     case "move": {
-        move_towards_point(obj_player.x, obj_player.y, 5)
+        //move_towards_point(obj_player.x, obj_player.y, 5)
         var player_dir = point_direction(x, y, obj_player.x, obj_player.y)
         
         if(abs(player_dir) > 90){
@@ -47,14 +45,14 @@ switch(state){
             goto_state("move")
         }
         if(!is_animated){
-            if(combo_attack_index == array_length_2d(combo_num, combo_num) - 1){
+            if(combo_attack_index == array_length_2d(combo, combo_num) - 1){
                 // Finished the combo
                 goto_state("idle")
             }
             else{
                 // Go to the next attack in the combo
                 combo_attack_index++;
-                perform_animation(global.combos[combo_num, combo_attack_index] + ATTACK_ANIMATIONS, false)
+                perform_animation(attack_sprites[combos[combo_num, combo_attack_index]], false)
             }
         }
         break;
