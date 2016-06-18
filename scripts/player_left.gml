@@ -1,3 +1,3 @@
 ///player_left()
 
-x -= x_speed;
+hspeed = -x_speed;
