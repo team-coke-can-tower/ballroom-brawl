@@ -1,10 +1,17 @@
 // enemy_step()
 
-// all states go to combo if you are near enough
+// all states except combo go to combo if you are near enough
 
-if(distance_to_object(obj_player) < 5){
-    goto_state("combo");
-    return 0;
+var player_dir = point_direction(x, y, obj_player.x, obj_player.y)
+facing_left = player_dir > 90 && player_dir < 270
+
+if(state == "move" || state == "combo"){
+    if(facing_left){
+        image_xscale = -1
+    }
+    else{
+        image_xscale = 1
+    }
 }
 
 // execute code on certain states
@@ -14,24 +21,18 @@ switch(state){
         if(state_alarm_on){
             goto_state("move")
         }
-        break
+        break;
     case "move": {
-        //move_towards_point(obj_player.x, obj_player.y, 5)
-        var player_dir = point_direction(x, y, obj_player.x, obj_player.y)
-        
-        if(abs(player_dir) > 90){
-            image_xscale = -1
+        if(facing_left){
+            hspeed = -5
         }
         else{
-            image_xscale = 1
+            hspeed = 5
         }
         
         if(distance_to_object(obj_player) < 5){
             // near player, perform combo
             goto_state("combo")
-        }
-        if(distance_to_object(obj_player) > 20){
-            goto_state("idle")
         }
         break;
     }
@@ -39,13 +40,26 @@ switch(state){
         if(!is_animated){
             goto_state(last_state)
         }
+        break;
     }
     case "combo":
         if(distance_to_object(obj_player) > 5){
-            goto_state("move")
+            if(facing_left){
+                hspeed = -5
+            }
+            else{
+                hspeed = 5
+            }
         }
+        else{
+            hspeed = 0
+        }
+        if(distance_to_object(obj_player) > 30){
+            goto_state("idle")
+        }
+        
         if(!is_animated){
-            if(combo_attack_index == array_length_2d(combo, combo_num) - 1){
+            if(combo_attack_index == array_length_2d(combos, combo_num) - 1){
                 // Finished the combo
                 goto_state("idle")
             }
@@ -53,6 +67,13 @@ switch(state){
                 // Go to the next attack in the combo
                 combo_attack_index++;
                 perform_animation(attack_sprites[combos[combo_num, combo_attack_index]], false)
+                obj_player.hp--;
+                if(facing_left){
+                    obj_player.x-=10
+                }
+                else{
+                    obj_player.x+=10
+                }
             }
         }
         break;
