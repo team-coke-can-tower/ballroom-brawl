@@ -1,7 +1,7 @@
 // The index of the combo that the enemy is on, -1 means not started
 combo_attack_index = -1
 
-// Whether a combo is being attempted at the moment, -1 means no combo
+// The number combo that is being attempted at the moment
 combo_num = -1
 
 state_alarm_on = false

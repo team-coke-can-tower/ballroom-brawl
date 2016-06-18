@@ -1,19 +1,15 @@
 // enemy_step()
 
-if(combo_num != -1){
-    if(distance_to_point(obj_player.x, obj_player.y) < 5){
-        
-    }
-    else{
-        move_towards_point(obj_player.x, obj_player.y, 5)
-    }
-}
-
 animation_step()
 
+// all states go to combo if you are near enough
 
+if(distance_to_object(obj_player) < 5){
+    goto_state("combo");
+    return 0;
+}
 
-// execute the required code for a given state
+// execute code on certain states
 
 switch(state){
     case "idle":
@@ -36,6 +32,9 @@ switch(state){
             // near player, perform combo
             goto_state("combo")
         }
+        if(distance_to_object(obj_player) > 20){
+            goto_state("idle")
+        }
         break;
     }
     case "hurt":{
@@ -44,6 +43,9 @@ switch(state){
         }
     }
     case "combo":
+        if(distance_to_object(obj_player) > 5){
+            goto_state("move")
+        }
         if(!is_animated){
             if(combo_attack_index == array_length_2d(combo_num, combo_num) - 1){
                 // Finished the combo
