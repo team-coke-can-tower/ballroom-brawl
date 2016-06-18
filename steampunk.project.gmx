@@ -9,6 +9,7 @@
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_floor</sprite>
     <sprite>sprites\spr_heart</sprite>
+    <sprite>sprites\spr_attack</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -27,11 +28,16 @@
       <script>scripts\ui_init.gml</script>
       <script>scripts\ui_display.gml</script>
     </scripts>
+    <scripts name="attack">
+      <script>scripts\attack_init.gml</script>
+      <script>scripts\attack_step.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_floor</object>
     <object>objects\obj_ui</object>
+    <object>objects\obj_attack</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
