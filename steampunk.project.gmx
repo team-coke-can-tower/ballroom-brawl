@@ -28,6 +28,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bgr_menu</background>
+    <background>background\bgr_main</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
