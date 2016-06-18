@@ -41,6 +41,14 @@
       <script>scripts\attack_init.gml</script>
       <script>scripts\attack_step.gml</script>
     </scripts>
+    <scripts name="enemy">
+      <script>scripts\enemy_step.gml</script>
+      <script>scripts\enemy_init.gml</script>
+      <script>scripts\perform_combo.gml</script>
+    </scripts>
+    <scripts name="main_room">
+      <script>scripts\room_init.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -49,6 +57,7 @@
     <object>objects\obj_attack</object>
     <object>objects\obj_lady</object>
     <object>objects\obj_gentleman</object>
+    <object>objects\obj_enemy</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
