@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_floor</sprite>
+    <sprite>sprites\spr_heart</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -16,16 +17,21 @@
       <script>scripts\player_left.gml</script>
       <script>scripts\player_right.gml</script>
       <script>scripts\player_up.gml</script>
-      <script>scripts\init.gml</script>
+      <script>scripts\player_init.gml</script>
       <script>scripts\player_collide_wall.gml</script>
       <script>scripts\player_stop_horiz.gml</script>
       <script>scripts\player_hurt.gml</script>
       <script>scripts\player_punch.gml</script>
     </scripts>
+    <scripts name="ui">
+      <script>scripts\ui_init.gml</script>
+      <script>scripts\ui_display.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_floor</object>
+    <object>objects\obj_ui</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
