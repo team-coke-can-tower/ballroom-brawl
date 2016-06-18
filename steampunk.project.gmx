@@ -19,6 +19,8 @@
       <script>scripts\init.gml</script>
       <script>scripts\player_collide_wall.gml</script>
       <script>scripts\player_stop_horiz.gml</script>
+      <script>scripts\player_hurt.gml</script>
+      <script>scripts\player_punch.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
