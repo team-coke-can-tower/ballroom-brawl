@@ -1,9 +1,17 @@
 ///player_hurt
 
-hp -= 1;
+attack = instance_nearest(x, y, obj_attack);
 
-if(hp <= 0) {
-    is_dead = true;
-} else {
-    // TODO: hurt animation
+if(not attack.from_player) {
+    hp -= attack.damage;
+    
+    if(hp <= 0) {
+        is_dead = true;
+    } else {
+        // TODO: hurt animation
+    }
+    
+    with(attack) {
+        instance_destroy();
+    }
 }
