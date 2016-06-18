@@ -19,8 +19,16 @@
       <sprite>sprites\spr_player_land</sprite>
       <sprite>sprites\spr_player_hurt</sprite>
     </sprites>
+    <sprites name="menu">
+      <sprite>sprites\spr_menu_text</sprite>
+      <sprite>sprites\spr_play_button</sprite>
+      <sprite>sprites\spr_options_button</sprite>
+      <sprite>sprites\spr_quit_button</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bgr_menu</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="player">
@@ -73,8 +81,15 @@
     <object>objects\obj_lady</object>
     <object>objects\obj_gentleman</object>
     <object>objects\obj_enemy</object>
+    <objects name="menu">
+      <object>objects\obj_menu_text</object>
+      <object>objects\obj_new_game</object>
+      <object>objects\obj_options_button</object>
+      <object>objects\obj_quit_button</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_menu</room>
     <room>rooms\rm_main</room>
   </rooms>
   <help>
