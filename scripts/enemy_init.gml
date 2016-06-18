@@ -21,9 +21,6 @@ state_alarm_on = false
 
 state = "idle"
 
-// Set the alarm for the combo
-alarm[0] = irandom_range(300, 600)
-
 is_animated = false
 
 hp = 3
