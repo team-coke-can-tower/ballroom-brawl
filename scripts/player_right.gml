@@ -1,4 +1,4 @@
-///player_right
+///player_right()
 
 if (not (has_punched or been_hit)) {
     hspeed = x_speed;
