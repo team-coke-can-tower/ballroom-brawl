@@ -9,6 +9,7 @@ image_speed = 0.25;
 
 hp = 10;
 is_dead = false;
+falling = false;
 
 facing_left = false;
 has_punched = false;
