@@ -49,6 +49,10 @@
     <scripts name="main_room">
       <script>scripts\room_init.gml</script>
     </scripts>
+    <scripts name="animations">
+      <script>scripts\perform_animation.gml</script>
+      <script>scripts\animation_step.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
