@@ -1,9 +1,12 @@
-/// perform_animation(index, looping)
+/// perform_animation(sprite_index, looping[, speed])
 
-var index = argument0
-var looping = argument1
+if(argument_count == 3){
+    image_speed = argument[2]
+}
+else{
+    image_speed = 1
+}
 
-image_index = animations[index]
+sprite_index = argument[0]
 is_animated = true
-animation_looping = looping
-current_animation = index
+animation_looping = argument[1]
