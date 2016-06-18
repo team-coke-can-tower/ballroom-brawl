@@ -9,7 +9,6 @@
     <sprite>sprites\spr_floor</sprite>
     <sprite>sprites\spr_heart</sprite>
     <sprite>sprites\spr_attack</sprite>
-    <sprite>sprites\spr_gentleman</sprite>
     <sprites name="player">
       <sprite>sprites\spr_player</sprite>
       <sprite>sprites\spr_player_punch</sprite>
@@ -27,6 +26,12 @@
     <sprites name="lady">
       <sprite>sprites\spr_lady</sprite>
       <sprite>sprites\spr_lady_punch</sprite>
+      <sprite>sprites\spr_lady_kick</sprite>
+    </sprites>
+    <sprites name="gentleman">
+      <sprite>sprites\spr_gentleman</sprite>
+      <sprite>sprites\spr_gentleman_punch</sprite>
+      <sprite>sprites\spr_gentleman_kick</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
