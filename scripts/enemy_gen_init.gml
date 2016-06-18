@@ -1,5 +1,5 @@
 ///enemy_gen_init()
 
-left_enemy_exists = false;
-right_enemy_exists = false;
+enemy_left_exists = false;
+enemy_right_exists = false;
 
