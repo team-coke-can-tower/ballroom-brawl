@@ -81,6 +81,9 @@
       <script>scripts\add_enemy.gml</script>
       <script>scripts\enemy_gen_step.gml</script>
     </scripts>
+    <scripts name="gentleman">
+      <script>scripts\init_gentleman.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>

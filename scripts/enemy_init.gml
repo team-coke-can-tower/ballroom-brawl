@@ -26,4 +26,6 @@ alarm[0] = irandom_range(300, 600)
 
 is_animated = false
 
+hp = 3
+
 goto_state("idle")
