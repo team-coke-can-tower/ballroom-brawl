@@ -23,6 +23,7 @@
       <script>scripts\player_stop_horiz.gml</script>
       <script>scripts\player_hurt.gml</script>
       <script>scripts\player_punch.gml</script>
+      <script>scripts\player_punch_ended.gml</script>
     </scripts>
     <scripts name="ui">
       <script>scripts\ui_init.gml</script>
