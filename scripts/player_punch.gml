@@ -3,11 +3,14 @@
 // TODO: use punch animations
 
 if(not has_punched) {
+    var punch;
     if (facing_left) {
-        instance_create(x-40, y, obj_attack);
+        punch = instance_create(x-40, y, obj_attack);
     } else {
-        instance_create(x+40, y, obj_attack);
+        punch = instance_create(x+40, y, obj_attack);
     }
+    punch.from_player = true;
+    punch.damage = 1;
     
     has_punched = true;
     alarm[0] = 10;  // delay until next punch
