@@ -55,6 +55,7 @@
     <scripts name="enemy">
       <script>scripts\enemy_step.gml</script>
       <script>scripts\enemy_init.gml</script>
+      <script>scripts\goto_state.gml</script>
     </scripts>
     <scripts name="main_room">
       <script>scripts\room_init.gml</script>
@@ -63,7 +64,6 @@
       <script>scripts\perform_animation.gml</script>
       <script>scripts\animation_step.gml</script>
     </scripts>
-    <script>scripts\goto_state.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
