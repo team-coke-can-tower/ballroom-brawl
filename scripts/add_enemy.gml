@@ -12,8 +12,10 @@ if(on_left) {
 }
 
 if(irandom(1) == 0) {
+    enemy_y -= sprite_get_height(spr_lady)/2;
     enemy = instance_create(enemy_x, enemy_y, obj_lady);
 } else {
+    enemy_y -= sprite_get_height(spr_gentleman)/2;
     enemy = instance_create(enemy_x, enemy_y, obj_gentleman);
 }
 

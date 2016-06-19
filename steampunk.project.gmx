@@ -34,6 +34,7 @@
       <sprite>sprites\spr_gentleman</sprite>
       <sprite>sprites\spr_gentleman_punch</sprite>
       <sprite>sprites\spr_gentleman_kick</sprite>
+      <sprite>sprites\spr_gentleman_hurt</sprite>
     </sprites>
     <sprite>sprites\spr_you_win</sprite>
   </sprites>
