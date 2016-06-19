@@ -152,6 +152,16 @@
       <script>scripts\clock_init.gml</script>
       <script>scripts\clock_step.gml</script>
       <script>scripts\clock_draw.gml</script>
+    <scripts name="button">
+      <script>scripts\button_draw.gml</script>
+      <script>scripts\button_init.gml</script>
+    </scripts>
+    <scripts name="tab_ui">
+      <script>scripts\tabui_init.gml</script>
+      <script>scripts\tabui_upkey.gml</script>
+      <script>scripts\tabui_defocus.gml</script>
+      <script>scripts\tabui_downkey.gml</script>
+      <script>scripts\tabui_enter.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -184,6 +194,8 @@
     <object>objects\obj_pause</object>
     <object>objects\obj_clock</object>
     <object>objects\obj_main_menu_button</object>
+    <object>objects\obj_button</object>
+    <object>objects\obj_tabui</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
