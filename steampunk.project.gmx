@@ -5,7 +5,7 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\hit</sound>
+    <sound>sound\snd_main_theme</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_heart</sprite>
@@ -98,6 +98,9 @@
     </scripts>
     <scripts name="gentleman">
       <script>scripts\init_gentleman.gml</script>
+    </scripts>
+    <scripts name="rm_main">
+      <script>scripts\rm_main_init.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
