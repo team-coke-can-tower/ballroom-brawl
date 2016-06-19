@@ -4,6 +4,7 @@ x_speed = 7;
 y_speed = 20;
 
 v_acc = 1;
+h_acc = 0;
 
 image_speed = 0.25;
 

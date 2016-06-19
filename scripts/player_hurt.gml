@@ -11,8 +11,14 @@ if(not attack.from_player) {
     } else {
         sprite_index = spr_player_hurt;
         image_index = 0;
-        image_speed = 0.5;
-        alarm[2] = 20;  // call player_hurt_end
+        if(attack.x > x) {
+            hspeed = -5;
+            h_acc = 1;
+        } else {
+            hspeed = 5;
+            h_acc = -1;
+        }
+        alarm[2] = 5;  // call player_hurt_end
     }
     
     with(attack) {

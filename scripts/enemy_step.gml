@@ -67,13 +67,14 @@ switch(state){
                 // Go to the next attack in the combo
                 combo_attack_index++;
                 perform_animation(attack_sprites[combos[combo_num, combo_attack_index]], false)
-                obj_player.hp--;
-                if(facing_left){
-                    obj_player.x-=10
+                var attack
+                if(facing_left) {
+                    attack = instance_create(x-abs(sprite_width/2), y, obj_attack)
+                } else {
+                    attack = instance_create(x+abs(sprite_width/2), y, obj_attack)
                 }
-                else{
-                    obj_player.x+=10
-                }
+                attack.from_player = false
+                attack.damage = 1
             }
         }
         break;

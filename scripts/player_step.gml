@@ -1,6 +1,7 @@
 ///player_step()
 
 vspeed += v_acc;
+hspeed += h_acc;
 
 if((sprite_index == spr_player_jump) and (image_index == 5)) {
     sprite_index = spr_player_fall;
