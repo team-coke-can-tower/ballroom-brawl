@@ -55,6 +55,7 @@
     <instance objName="obj_new_game" x="166" y="224" name="inst_1511C2B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_options_button" x="164" y="299" name="inst_B54D5863" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_quit_button" x="163" y="372" name="inst_EEFC4F11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_set_globals" x="32" y="32" name="inst_37AF2723" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
