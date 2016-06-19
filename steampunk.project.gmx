@@ -139,6 +139,11 @@
       <script>scripts\init_rebinding_panel.gml</script>
     </scripts>
     <script>scripts\set_globals.gml</script>
+    <scripts name="pause">
+      <script>scripts\pause_init.gml</script>
+      <script>scripts\pause_draw.gml</script>
+      <script>scripts\pause_esc_pressed.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -164,6 +169,7 @@
       <object>objects\options_ui</object>
     </objects>
     <object>objects\obj_set_globals</object>
+    <object>objects\obj_pause</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
