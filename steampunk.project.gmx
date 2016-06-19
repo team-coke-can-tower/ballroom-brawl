@@ -61,6 +61,7 @@
       <sprite>sprites\spr_you_win</sprite>
       <sprite>sprites\spr_options_text</sprite>
       <sprite>sprites\spr_rebinding_panel</sprite>
+      <sprite>sprites\spr_main_menu</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -89,7 +90,11 @@
         <script>scripts\player_hurt_alarm.gml</script>
       </scripts>
       <script>scripts\player_step.gml</script>
-      <script>scripts\player_keypress.gml</script>
+      <scripts name="player_keyhandlers">
+        <script>scripts\player_keyrelease.gml</script>
+        <script>scripts\player_keyhold.gml</script>
+        <script>scripts\player_keypress.gml</script>
+      </scripts>
     </scripts>
     <scripts name="ui">
       <script>scripts\ui_init.gml</script>
@@ -129,7 +134,6 @@
     </scripts>
     <scripts name="options_ui">
       <script>scripts\get_str_key_pressed.gml</script>
-      <script>scripts\paint_options.gml</script>
       <script>scripts\init_options.gml</script>
     </scripts>
     <scripts name="rebinding_panel">
@@ -166,10 +170,11 @@
       <object>objects\obj_you_win</object>
       <object>objects\obj_options_text</object>
       <object>objects\obj_rebinding_panel</object>
-      <object>objects\options_ui</object>
+      <object>objects\obj_options_ui</object>
     </objects>
     <object>objects\obj_set_globals</object>
     <object>objects\obj_pause</object>
+    <object>objects\obj_main_menu_button</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
