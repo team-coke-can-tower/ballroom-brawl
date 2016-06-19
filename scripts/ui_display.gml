@@ -24,8 +24,8 @@ for(enemy_index = 0; enemy_index < instance_number(obj_enemy); enemy_index += 1)
     with(enemy) {
         // Assumes enemy has an hp attribute.
         hp_sq_side = 10;
-        bar_x = x - abs(sprite_width/2);    // abs in case xscale is negative
-        bar_y = y - sprite_height;
+        bar_x = x - 30;    // abs in case xscale is negative
+        bar_y = y - (sprite_height/2) - 40;
         bar_width = hp * hp_sq_side * 2;
         bar_height = hp_sq_side;
         var current_pos;
