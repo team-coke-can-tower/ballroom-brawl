@@ -1,11 +1,21 @@
 ///ui_display()
 
-player = instance_find(obj_player, 0);
+var player = instance_find(obj_player, 0);
 
-hearts_y = 0;
-spr_width = sprite_get_width(spr_heart);
-for(hearts_x = 0; hearts_x < player.hp*spr_width; hearts_x += spr_width) {
-    draw_sprite(spr_heart, 0, hearts_x, hearts_y);
+var hearts_y = 0;
+var spr_width = sprite_get_width(spr_heart);
+var hearts_x = 0;
+for(var heart_index = 0; heart_index < 10; heart_index++) {
+    if(player.hp >= heart_index*2){
+        draw_sprite(spr_heart, 0, hearts_x, hearts_y);
+    }
+    else if (player.hp > heart_index*2 - 1){
+        draw_sprite(spr_heart, 1, hearts_x, hearts_y);
+    }
+    else {
+        draw_sprite(spr_heart, 2, hearts_x, hearts_y);
+    }
+    hearts_x += spr_width
 }
 
 // display health of each enemy
