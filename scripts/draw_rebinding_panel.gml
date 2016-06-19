@@ -10,6 +10,6 @@ image_speed = 0
 draw_set_colour(c_white)
 //draw_set_font(vast_shadow)
 draw_set_halign(fa_center)
-draw_text(x, y - 10, get_str_key_pressed(global.keymap[? controling_key]))
+draw_text(x, y - 10, get_str_key_pressed(global.keymap[? controlling_key]))
 
-draw_text(x - 130, y - 10, controling_key + ":")
+draw_text(x - 130, y - 10, controlling_key + ":")
