@@ -99,8 +99,9 @@
     <scripts name="gentleman">
       <script>scripts\init_gentleman.gml</script>
     </scripts>
-    <scripts name="rm_main">
-      <script>scripts\rm_main_init.gml</script>
+    <scripts name="game_global">
+      <script>scripts\game_global_init.gml</script>
+      <script>scripts\game_global_step.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -120,6 +121,7 @@
     <object>objects\obj_enemy_gen</object>
     <object>objects\obj_you_win</object>
     <object>objects\obj_maiden</object>
+    <object>objects\obj_game_global</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
