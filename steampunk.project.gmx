@@ -21,6 +21,7 @@
       <sprite>sprites\spr_play_button</sprite>
       <sprite>sprites\spr_options_button</sprite>
       <sprite>sprites\spr_quit_button</sprite>
+      <sprite>sprites\spr_gameover_animation</sprite>
     </sprites>
     <sprites name="lady">
       <sprite>sprites\spr_lady</sprite>
@@ -101,6 +102,7 @@
       <object>objects\obj_new_game</object>
       <object>objects\obj_options_button</object>
       <object>objects\obj_quit_button</object>
+      <object>objects\obj_gameover_animation</object>
     </objects>
     <object>objects\obj_enemy_gen</object>
   </objects>

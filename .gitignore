@@ -1,4 +1,4 @@
-.*.wav
+*.wav
 
 # Remove Config files
 Configs/Default/*
