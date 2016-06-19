@@ -3,7 +3,7 @@
 // TODO: use punch animations
 
 if(not has_punched) {
-    hspeed = 0;
+    x_speed = 0;
     var punch;
     if (facing_left) {
         punch = instance_create(x-50, y-150, obj_attack);

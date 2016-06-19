@@ -1,7 +1,13 @@
 ///player_step()
 
-vspeed += v_acc;
-hspeed += h_acc;
+
+if(!place_meeting(x, y+y_speed+1, obj_wall)) {
+    y_speed += v_acc;
+}
+
+if(!place_meeting(x+h_acc, y, obj_wall)) {
+    x_speed += h_acc;
+}
 
 if((sprite_index == spr_player_jump) and (image_index == 5)) {
     sprite_index = spr_player_fall;
@@ -13,11 +19,11 @@ if((sprite_index == spr_player_land) and (image_index == 3)) {
     image_index = 0;
 }
 
-// collision check with floor
-if((y >= (room_height - 64))) {
-    y = room_height - 64;
-    if (not pre_jumping) {
-        player_collide_wall();
-    }
+if(!place_meeting(x, y, obj_wall)) {
+    xprev = x;
+    yprev = y;
 }
+
+x += x_speed;
+y += y_speed;
 

@@ -1,7 +1,7 @@
 ///player_left()
 
 if (not (has_punched or been_hit)) {
-    hspeed = -x_speed;
+    x_speed = -run_hspeed;
     
     if (not facing_left) {
         facing_left = true;

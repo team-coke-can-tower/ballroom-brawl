@@ -52,6 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_gameover_animation" x="320" y="240" name="inst_35B498D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tabui" x="0" y="-32" name="inst_A29B3AC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

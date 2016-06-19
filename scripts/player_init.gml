@@ -1,7 +1,14 @@
 ///init()
 
-x_speed = 7;
-y_speed = 20;
+x_speed = 0;
+y_speed = 0;
+
+// last place player was before collision
+xprev = 0;
+yprev = 0;
+
+run_hspeed = 7;
+jump_vspeed = -20;
 
 v_acc = 1;
 h_acc = 0;

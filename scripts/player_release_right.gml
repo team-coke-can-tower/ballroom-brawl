@@ -1,5 +1,5 @@
 ///player_release_right()
 
-if(hspeed > 0) {
-    hspeed = 0;
+if(x_speed > 0) {
+    x_speed = 0;
 }
