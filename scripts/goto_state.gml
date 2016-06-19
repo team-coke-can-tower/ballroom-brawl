@@ -21,7 +21,8 @@ switch(state){
         alarm[0] = 5000 // 5 secs until you get rid of the move state
         break;
     case "hurt":
-        perform_animation(hurt_sprite, false)
+        perform_animation(hurt_sprite, false, sprite_get_number(hurt_sprite) / 6.0)
+        alarm[0] = 6
         break;
     case "combo":
         combo_num = irandom_range(0, array_height_2d(combos) - 1)

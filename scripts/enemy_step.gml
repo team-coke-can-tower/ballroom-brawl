@@ -40,6 +40,9 @@ switch(state){
         if(!is_animated){
             goto_state(last_state)
         }
+        if(state_alarm_on) {
+            goto_state(last_state)
+        }
         break;
     }
     case "combo":

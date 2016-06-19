@@ -29,6 +29,7 @@
       <sprite>sprites\spr_lady</sprite>
       <sprite>sprites\spr_lady_punch</sprite>
       <sprite>sprites\spr_lady_kick</sprite>
+      <sprite>sprites\spr_lady_hurt</sprite>
     </sprites>
     <sprites name="gentleman">
       <sprite>sprites\spr_gentleman</sprite>
@@ -78,6 +79,7 @@
       <script>scripts\enemy_init.gml</script>
       <script>scripts\goto_state.gml</script>
       <script>scripts\enemy_destroyed.gml</script>
+      <script>scripts\enemy_hurt.gml</script>
     </scripts>
     <scripts name="animations">
       <script>scripts\perform_animation.gml</script>
