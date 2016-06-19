@@ -2,13 +2,13 @@
 
 // Replace enemy on left
 if(not enemy_left_exists) {
-    add_enemy(true);
+    alarm[0] = respawn_delay;
     enemy_left_exists = true;
 }
 
 // Replace enemy on right
 if(not enemy_right_exists) {
-    add_enemy(false);
+    alarm[1] = respawn_delay;
     enemy_right_exists = true;
 }
 

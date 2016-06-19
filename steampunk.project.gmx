@@ -92,6 +92,8 @@
       <script>scripts\enemy_gen_init.gml</script>
       <script>scripts\add_enemy.gml</script>
       <script>scripts\enemy_gen_step.gml</script>
+      <script>scripts\enemy_gen_alarm0.gml</script>
+      <script>scripts\enemy_gen_alarm1.gml</script>
     </scripts>
     <scripts name="gentleman">
       <script>scripts\init_gentleman.gml</script>
