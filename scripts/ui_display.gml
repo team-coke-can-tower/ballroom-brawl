@@ -30,13 +30,13 @@ for(enemy_index = 0; enemy_index < instance_number(obj_enemy); enemy_index += 1)
         bar_height = hp_sq_side;
         var current_pos;
         for(current_pos = bar_x; current_pos < (bar_x+bar_width); current_pos += hp_sq_side*2) {
-            // TODO: find a better function
-            draw_rectangle_color(current_pos, bar_y, current_pos + (hp_sq_side*2), bar_y + bar_height,
+            used_pos = current_pos - view_xview[0];
+            draw_rectangle_color(used_pos, bar_y, used_pos + (hp_sq_side*2), bar_y + bar_height,
             c_red, c_red, c_red, c_red, false);
         }
         for(; current_pos < (bar_x+60); current_pos += hp_sq_side*2) {
-            // TODO: find a better function
-            draw_rectangle_color(current_pos, bar_y, current_pos + (hp_sq_side*2), bar_y + bar_height,
+            used_pos = current_pos - view_xview[0];
+            draw_rectangle_color(used_pos, bar_y, used_pos + (hp_sq_side*2), bar_y + bar_height,
             c_black, c_black, c_black, c_black, false);
         }
     }
