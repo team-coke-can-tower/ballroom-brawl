@@ -35,6 +35,7 @@
       <sprite>sprites\spr_gentleman_punch</sprite>
       <sprite>sprites\spr_gentleman_kick</sprite>
     </sprites>
+    <sprite>sprites\spr_you_win</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgr_menu</background>
@@ -107,13 +108,14 @@
       <object>objects\obj_gameover_animation</object>
     </objects>
     <object>objects\obj_enemy_gen</object>
+    <object>objects\obj_you_win</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
     <room>rooms\rm_menu</room>
     <room>rooms\rm_options</room>
-    <room>rooms\rm_losing_screen</room>
     <room>rooms\rm_winning_screen</room>
+    <room>rooms\rm_losing_screen</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
