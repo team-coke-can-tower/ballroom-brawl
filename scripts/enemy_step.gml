@@ -62,6 +62,15 @@ switch(state){
         }
         
         if(!is_animated){
+            var attack
+            if(facing_left) {
+                attack = instance_create(x-abs(sprite_width/2), y, obj_attack)
+            } else {
+                attack = instance_create(x+abs(sprite_width/2), y, obj_attack)
+            }
+            attack.from_player = false
+            attack.damage = 1
+            
             if(combo_attack_index == array_length_2d(combos, combo_num) - 1){
                 // Finished the combo
                 goto_state("idle")
@@ -70,14 +79,6 @@ switch(state){
                 // Go to the next attack in the combo
                 combo_attack_index++;
                 perform_animation(attack_sprites[combos[combo_num, combo_attack_index]], false)
-                var attack
-                if(facing_left) {
-                    attack = instance_create(x-abs(sprite_width/2), y, obj_attack)
-                } else {
-                    attack = instance_create(x+abs(sprite_width/2), y, obj_attack)
-                }
-                attack.from_player = false
-                attack.damage = 1
             }
         }
         break;
