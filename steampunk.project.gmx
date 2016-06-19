@@ -163,9 +163,14 @@
       <script>scripts\tabui_downkey.gml</script>
       <script>scripts\tabui_enter.gml</script>
     </scripts>
+    <scripts name="gameover_animation">
+      <script>scripts\gameover_alarm0.gml</script>
+      <script>scripts\gameover_draw_gui.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_arial</font>
+    <font>fonts\fnt_arial_gameover</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
