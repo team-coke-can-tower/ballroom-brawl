@@ -144,7 +144,15 @@
       <script>scripts\pause_draw.gml</script>
       <script>scripts\pause_esc_pressed.gml</script>
     </scripts>
+    <scripts name="clock">
+      <script>scripts\clock_init.gml</script>
+      <script>scripts\clock_step.gml</script>
+      <script>scripts\clock_draw.gml</script>
+    </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_arial</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_ui</object>
@@ -170,6 +178,7 @@
     </objects>
     <object>objects\obj_set_globals</object>
     <object>objects\obj_pause</object>
+    <object>objects\obj_clock</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
