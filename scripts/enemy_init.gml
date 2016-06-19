@@ -25,4 +25,7 @@ is_animated = false
 
 hp = 3
 
+from_left = false
+generator = noone
+
 goto_state("idle")

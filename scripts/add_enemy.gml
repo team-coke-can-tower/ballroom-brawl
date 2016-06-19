@@ -20,3 +20,4 @@ if(irandom(1) == 0) {
 }
 
 enemy.generator = id;
+enemy.from_left = on_left;
