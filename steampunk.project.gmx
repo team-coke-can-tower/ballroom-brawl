@@ -155,7 +155,6 @@
       <object>objects\obj_gameover_animation</object>
     </objects>
     <object>objects\obj_enemy_gen</object>
-    <object>objects\obj_you_win</object>
     <object>objects\obj_maiden</object>
     <object>objects\obj_game_global</object>
     <objects name="other_ui">
