@@ -170,6 +170,11 @@
       <script>scripts\gameover_alarm0.gml</script>
       <script>scripts\gameover_draw_gui.gml</script>
     </scripts>
+    <scripts name="wall_top">
+      <script>scripts\wall_top_init.gml</script>
+      <script>scripts\wall_top_draw.gml</script>
+      <script>scripts\wall_step.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_arial</font>
@@ -206,6 +211,7 @@
     <object>objects\obj_tabui</object>
     <object>objects\obj_test_platformer</object>
     <object>objects\obj_wall</object>
+    <object>objects\obj_wall_top</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>

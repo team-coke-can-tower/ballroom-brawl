@@ -1,9 +1,14 @@
 ///player_step()
 
+y = round(y);
+x = round(x);
 
 if(!place_meeting(x, y+y_speed+1, obj_wall)) {
     y_speed += v_acc;
-}
+    show_debug_message("no collision");
+} else {
+    show_debug_message("collided");
+} 
 
 if(!place_meeting(x+h_acc, y, obj_wall)) {
     x_speed += h_acc;
